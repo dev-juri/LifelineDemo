@@ -4,10 +4,15 @@ import com.juri.lifelinedemo.data.LoginBody
 
 class RepositoryImpl: Repository {
 
-    private val listOfUsers = mapOf( "abc@xyz.com" to
-        LoginBody(
+    private val listOfUsers = mapOf(
+        "abc@xyz.com" to LoginBody(
             "abc@xyz.com",
             "Abc Xyz",
+            "pass"
+        ),
+        "cde@xyz.com" to LoginBody(
+            "cde@xyz.com",
+            "CDE Xyz",
             "pass"
         )
     )
